@@ -31,7 +31,7 @@ export default (input: number, options?: FormatNumberOptions) => {
     formattedNumber += separator + decimals;
   }
 
-  formattedNumber = `${unit}${sign}${formattedNumber}`;
+  formattedNumber = `${sign}${formattedNumber}${unit}`;
 
   return formattedNumber;
 };
